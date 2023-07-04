@@ -13,6 +13,7 @@ public class CurrentAccount {
         initializeUI();
         addEventListeners();
     }
+    
     private void initializeUI() {
         currentFrame = new JFrame("CURRENT");
         currentAccountWithdrawalButton = new JButton("WITHDRAWAL");
@@ -26,6 +27,7 @@ public class CurrentAccount {
         currentFrame.add(currentPinField);
         currentFrame.setSize(300, 250);
     }
+   
     private void addEventListeners() {
         currentAccountWithdrawalButton.addActionListener(new ActionListener() {
             @Override
@@ -40,6 +42,7 @@ public class CurrentAccount {
                 }
             }
         });
+       
         currentAccountDepositButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -54,6 +57,7 @@ public class CurrentAccount {
             }
         });
     }
+   
     public void show() {
         currentFrame.setVisible(true);
     }
