@@ -12,6 +12,7 @@ public class SavingsAccount {
     public SavingsAccount() {
         initializeUI();
         addEventListeners();
+  
     }
     private void initializeUI() {
         savingsFrame = new JFrame("GEMS SAVINGS");
@@ -28,6 +29,7 @@ public class SavingsAccount {
         savingsFrame.add(savingsPinField);
         savingsFrame.setSize(300, 250);
     }
+      
     private void addEventListeners() {
         savingsWithdrawalButton.addActionListener(new ActionListener() {
             @Override
@@ -42,6 +44,7 @@ public class SavingsAccount {
                 }
             }
         });
+    
         savingsDepositButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,6 +59,7 @@ public class SavingsAccount {
             }
         });
     }
+  
     public void show() {
         savingsFrame.setVisible(true);
     }
